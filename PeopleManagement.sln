@@ -7,6 +7,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleManagement.Web", "Peo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleManagement.Data", "PeopleManagement.Data\PeopleManagement.Data.csproj", "{684EA977-3A4D-483E-B2A0-98D0EAF3469C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleManagement.Business", "PeopleManagement.Business\PeopleManagement.Business.csproj", "{BED51353-1044-42C1-A02B-555DD6216EFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleManagement.Domain", "PeopleManagement.Domain\PeopleManagement.Domain.csproj", "{39D2AE78-1DC2-4503-BF93-813E955F896A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1- Web", "1- Web", "{CA14E7C7-1505-4885-86BE-8221BE51D8FC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2- Business", "2- Business", "{CC29B4E2-997B-49BB-AE92-F28DB82B68F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3- Data", "3- Data", "{F6FE4FC8-28C1-4781-8E6B-F7715906C58E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4- Domain", "4- Domain", "{39A208A9-A4E5-402B-8619-21DB87C8AEDA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,9 +33,23 @@ Global
 		{684EA977-3A4D-483E-B2A0-98D0EAF3469C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{684EA977-3A4D-483E-B2A0-98D0EAF3469C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{684EA977-3A4D-483E-B2A0-98D0EAF3469C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BED51353-1044-42C1-A02B-555DD6216EFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BED51353-1044-42C1-A02B-555DD6216EFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BED51353-1044-42C1-A02B-555DD6216EFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BED51353-1044-42C1-A02B-555DD6216EFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39D2AE78-1DC2-4503-BF93-813E955F896A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39D2AE78-1DC2-4503-BF93-813E955F896A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39D2AE78-1DC2-4503-BF93-813E955F896A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39D2AE78-1DC2-4503-BF93-813E955F896A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0C458C6B-99DA-490F-804B-5C0B8E5A25E0} = {CA14E7C7-1505-4885-86BE-8221BE51D8FC}
+		{684EA977-3A4D-483E-B2A0-98D0EAF3469C} = {F6FE4FC8-28C1-4781-8E6B-F7715906C58E}
+		{BED51353-1044-42C1-A02B-555DD6216EFE} = {CC29B4E2-997B-49BB-AE92-F28DB82B68F2}
+		{39D2AE78-1DC2-4503-BF93-813E955F896A} = {39A208A9-A4E5-402B-8619-21DB87C8AEDA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E5789B7C-DE4F-4486-B0ED-EAE81E88B31D}

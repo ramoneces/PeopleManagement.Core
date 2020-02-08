@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PeopleManagement.Domain
+namespace PeopleManagement.Data.Model
 {
     public class Person
     {

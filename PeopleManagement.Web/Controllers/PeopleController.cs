@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using PeopleManagement.Data.Model;
-using PeopleManagement.Data.Services;
+using PeopleManagement.Business.Dtos;
+using PeopleManagement.Business.Services;
 using System;
 
 namespace PeopleManagement.Web.Controllers
@@ -52,7 +52,7 @@ namespace PeopleManagement.Web.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([Bind("Id,Name")] Person person)
+        public IActionResult Create([Bind("Id,Name")] PersonDto person)
         {
             if (ModelState.IsValid)
             {
@@ -83,7 +83,7 @@ namespace PeopleManagement.Web.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(Guid id, [Bind("Id,Name")] Person person)
+        public IActionResult Edit(Guid id, [Bind("Id,Name")] PersonDto person)
         {
             if (id != person.Id)
             {
@@ -109,7 +109,7 @@ namespace PeopleManagement.Web.Controllers
                 return NotFound();
             }
 
-            Person person = _peopleService.GetById(id.Value);
+            PersonDto person = _peopleService.GetById(id.Value);
             if (person == null)
             {
                 return NotFound();

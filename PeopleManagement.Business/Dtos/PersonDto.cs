@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PeopleManagement.Domain
+namespace PeopleManagement.Business.Dtos
 {
-    public class Person
+    public class PersonDto
     {
         public Guid Id { get; set; }
 
